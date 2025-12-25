@@ -65,9 +65,13 @@ PowerShell events were verified locally on the endpoint using **Event Viewer**:
 Log Path:
 
 Applications and Services Logs
+
 └── Microsoft
+
 └── Windows
+
 └── PowerShell
+
 └── Operational
 
 
