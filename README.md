@@ -42,8 +42,11 @@ Before hunting, PowerShell logging was validated to ensure sufficient telemetry.
 Path:   
 
 Computer Configuration
+
 └── Administrative Templates
+
 └── Windows Components
+
 └── Windows PowerShell
 
 Enabled policies:
