@@ -104,8 +104,6 @@ PowerShell activity was searched using event-based hunting rather than keyword-o
 Example queries: data.win.system.eventID:4104
 
 
----
-
 ### Step 2: Execution Context Review
 For each PowerShell event, the following attributes were reviewed:
 - Executed command
@@ -113,7 +111,6 @@ For each PowerShell event, the following attributes were reviewed:
 - User context
 - Execution frequency
 
----
 
 ### Step 3: Behavior Analysis
 Observed activity was compared against:
@@ -133,6 +130,8 @@ Benign PowerShell commands were executed to generate test telemetry:
 
 These commands successfully generated PowerShell Operational logs for analysis.
 
+---
+
 ## 10. Findings
 
 - PowerShell execution was observed on the endpoint
@@ -141,9 +140,13 @@ These commands successfully generated PowerShell Operational logs for analysis.
 - No lateral movement or payload download behavior detected
 - The activity was classified as Benign.
 
+---
+
 ## 11. MITRE ATT&CK Mapping
 
 T1059.001 – Command and Scripting Interpreter: PowerShell
+
+---
 
 ## 12. Challenges Encountered
 
@@ -151,7 +154,9 @@ T1059.001 – Command and Scripting Interpreter: PowerShell
 - Field normalization required event ID–based hunting
 - Visibility depended heavily on proper Group Policy configuration
 
-13. Conclusion
+---
+
+## 13. Conclusion
 
 - This threat hunting exercise demonstrated the importance of:
 - Proper endpoint logging configuration
